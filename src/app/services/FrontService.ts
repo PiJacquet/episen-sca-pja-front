@@ -13,7 +13,7 @@ export class FrontService{
 
     sendText(text:String) :void{
         console.log("FrontService");
-        this.http.post('http://localhost:8080/add/order', text)
+        this.http.post('http://episen-sca-pja-back-container:8080/add/order', text)
        .subscribe(function(data) {
                console.log(data);
        });
